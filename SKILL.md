@@ -1,6 +1,17 @@
 ---
 name: handdraw-flowchart
+version: 0.1.0
 description: Create hand-drawn workflow diagrams from natural-language process descriptions by generating strictly validated Mermaid flowchart, sequenceDiagram, or classDiagram code, converting Mermaid to Excalidraw scene files, and exporting PNGs. Use when Codex needs sketch-style process diagrams, Mermaid-to-Excalidraw conversion, validated Mermaid diagram generation, or PNG exports from process descriptions.
+metadata:
+  openclaw:
+    tags:
+      - mermaid
+      - excalidraw
+      - diagrams
+    requires:
+      bins:
+        - node
+        - npm
 ---
 
 # Handdraw Flowchart
@@ -16,11 +27,11 @@ description: Create hand-drawn workflow diagrams from natural-language process d
 4. Save the Mermaid source as `<name>.mmd`.
 5. Run the renderer script. It performs strict Mermaid parsing before conversion:
 
-```bash
-cd /Users/zengjiaqi/.codex/skills/handdraw-flowchart
-npm install
-node scripts/render-mermaid-handdraw.mjs --input /path/to/<name>.mmd --out-dir /path/to/output --name <name>
-```
+   ```bash
+   cd <skill-directory>
+   npm install
+   node scripts/render-mermaid-handdraw.mjs --input /path/to/<name>.mmd --out-dir /path/to/output --name <name>
+   ```
 
 The script writes:
 

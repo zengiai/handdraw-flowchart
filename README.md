@@ -144,6 +144,37 @@ handdraw-flowchart/
 - `scripts/render-mermaid-handdraw.mjs`：Mermaid 校验和 Excalidraw/PNG 渲染脚本。
 - `references/mermaid-generation-rules.md`：生成 Mermaid 时需要遵守的规则。
 
+## 上传到 ClawHub
+
+ClawHub 发布时只需要上传 Skill 的运行核心文件：
+
+```text
+SKILL.md
+scripts/render-mermaid-handdraw.mjs
+references/mermaid-generation-rules.md
+package.json
+package-lock.json
+```
+
+这些文件已经足够描述 Skill、安装 Node 依赖并执行 Mermaid 渲染。仓库里的 `README.md`、`LICENSE`、`examples/`、`agents/` 主要服务于 GitHub 展示和 Codex UI，不是 ClawHub 运行必需文件。
+
+本仓库已提供 `.clawhubignore`，发布到 ClawHub 时会排除：
+
+- `.git/`
+- `node_modules/`
+- `out/`、`outputs/`
+- `examples/`
+- `README.md`
+- `LICENSE`
+- `agents/`
+- 日志、环境变量和临时目录
+
+如果使用 ClawHub CLI，从仓库根目录发布即可：
+
+```bash
+clawhub publish .
+```
+
 ## 常见问题
 
 ### 找不到 Chromium
