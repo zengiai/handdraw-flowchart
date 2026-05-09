@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handdraw Flowchart"
+  short_description: "Render validated Mermaid diagrams as hand-drawn PNGs"
+  default_prompt: "Use $handdraw-flowchart to turn a process description into a validated Mermaid diagram and hand-drawn PNG."

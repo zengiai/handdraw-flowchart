@@ -1,0 +1,8 @@
+flowchart TD
+  Start([Start]) --> Validate[Validate request]
+  Validate --> CheckStock{Stock available?}
+  CheckStock -->|No| Reject[Reject order]
+  CheckStock -->|Yes| Reserve[Reserve inventory]
+  Reserve --> CreateOrder[Create order]
+  CreateOrder --> PublishEvent[Publish order event]
+  PublishEvent --> End([Done])
