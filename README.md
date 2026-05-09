@@ -174,6 +174,12 @@ npm run validate -- --input your-diagram.mmd
 
 `classDiagram` 有时会走 image fallback。PNG 是可用的，但 Excalidraw 中的编辑粒度可能不如 `flowchart`。
 
+### npm audit 提示依赖漏洞
+
+安装依赖后，`npm audit` 可能会提示来自 Excalidraw、Mermaid parser、Langium、Chevrotain、lodash-es、nanoid 等传递依赖的安全告警。这些告警不会阻断本地安装和使用；本项目的默认定位是本地 Codex Skill/CLI 渲染工具，不对外暴露网络服务。
+
+如果你要把它改造成线上服务，并接收不可信用户提交的 Mermaid 内容，请不要直接裸跑渲染脚本。建议至少增加输入大小限制、渲染超时、进程隔离、容器沙箱、资源配额和依赖升级评估，再对外提供服务。
+
 ## License
 
 MIT.
