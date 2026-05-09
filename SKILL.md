@@ -4,10 +4,7 @@ version: 0.1.0
 description: Create hand-drawn workflow diagrams from natural-language process descriptions by generating strictly validated Mermaid flowchart, sequenceDiagram, or classDiagram code, converting Mermaid to Excalidraw scene files, and exporting PNGs. Use when Codex needs sketch-style process diagrams, Mermaid-to-Excalidraw conversion, validated Mermaid diagram generation, or PNG exports from process descriptions.
 metadata:
   openclaw:
-    tags:
-      - mermaid
-      - excalidraw
-      - diagrams
+    homepage: https://github.com/zengiai/handdraw-flowchart
     requires:
       bins:
         - node
