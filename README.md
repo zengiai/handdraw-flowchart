@@ -35,7 +35,7 @@
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone https://github.com/<your-github-name>/handdraw-flowchart.git ~/.codex/skills/handdraw-flowchart
+git clone https://github.com/zengiai/handdraw-flowchart.git ~/.codex/skills/handdraw-flowchart
 cd ~/.codex/skills/handdraw-flowchart
 npm install
 ```
@@ -53,7 +53,7 @@ npx playwright install chromium
 如果你的 Codex 环境支持 skill 安装器，可以直接让 Codex 执行类似指令：
 
 ```text
-Install the skill from https://github.com/<your-github-name>/handdraw-flowchart
+Install the skill from https://github.com/zengiai/handdraw-flowchart
 ```
 
 安装后仍建议进入 skill 目录执行一次依赖安装：
