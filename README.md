@@ -213,4 +213,4 @@ npm run validate -- --input your-diagram.mmd
 
 ## License
 
-MIT.
+MIT-0.

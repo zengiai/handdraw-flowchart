@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Codex skill and CLI helper for rendering validated Mermaid diagrams as hand-drawn Excalidraw PNGs.",
-  "license": "MIT",
+  "license": "MIT-0",
   "type": "module",
   "bin": {
     "handdraw-flowchart": "scripts/render-mermaid-handdraw.mjs"
