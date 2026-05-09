@@ -29,7 +29,17 @@
 
 ## 安装方式
 
-### 方式一：通过 GitHub 仓库安装
+### 方式一：通过 ClawHub 安装
+
+Skill 已发布到 ClawHub：
+
+```text
+https://clawhub.ai/zengiai/handdraw-flowchart
+```
+
+如果你的 Codex/OpenClaw 环境支持从 ClawHub 安装，可以直接使用该页面安装。
+
+### 方式二：通过 GitHub 仓库安装
 
 把仓库克隆到 Codex skills 目录：
 
@@ -48,7 +58,7 @@ npx playwright install chromium
 
 安装完成后，重启或刷新 Codex，让新的 Skill 被发现。
 
-### 方式二：让 Codex 从 GitHub 安装
+### 方式三：让 Codex 从 GitHub 安装
 
 如果你的 Codex 环境支持 skill 安装器，可以直接让 Codex 执行类似指令：
 
@@ -145,6 +155,12 @@ handdraw-flowchart/
 - `references/mermaid-generation-rules.md`：生成 Mermaid 时需要遵守的规则。
 
 ## 上传到 ClawHub
+
+当前 Skill 已发布：
+
+```text
+https://clawhub.ai/zengiai/handdraw-flowchart
+```
 
 ClawHub 发布时只需要上传 Skill 的运行核心文件：
 
